@@ -8,11 +8,18 @@ public class Account {
 
     public static int count = 0;
 
+    static{
+        System.out.println("Start static Area ....");
+        count = 1000000;
+        System.out.println("End static Area ....");
+
+    }
+
     public Account() {
     }
 
     public Account(String accNum, String custName, long balance, double interest) {
-        this.accNum = accNum;
+        this.accNum = String.valueOf(count);
         this.custName = custName;
         if(balance < 0){
             System.out.println("잔액은 0 이상이 입력 되어야 합니다.");
