@@ -26,6 +26,7 @@ public class App {
                 System.out.println(se.getBonus());
             }
             System.out.println(e.getAnnSalary());
+//            System.out.println(e.getBonus());
 
         }
     }
