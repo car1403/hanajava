@@ -19,26 +19,34 @@ public class CustService implements Service<String, CustDto> {
 
     @Override
     public int add(CustDto custDto) {
+        // Insert ...
+        dao.insert(custDto);
+        // SMS ..
+        System.out.println("Send SMS ....");
+        // Mail ..
+        System.out.println("Send Mail ....");
         return 0;
     }
 
     @Override
     public int del(String s) {
+        dao.delete(s);
         return 0;
     }
 
     @Override
     public int modify(CustDto custDto) {
+        dao.update(custDto);
         return 0;
     }
 
     @Override
     public CustDto get(String s) {
-        return null;
+        return dao.select(s);
     }
 
     @Override
     public List<CustDto> get() {
-        return null;
+        return dao.select();
     }
 }
