@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/day03/day03.iml" filepath="$PROJECT_DIR$/day03/day03.iml" />
       <module fileurl="file://$PROJECT_DIR$/day031/day031.iml" filepath="$PROJECT_DIR$/day031/day031.iml" />
       <module fileurl="file://$PROJECT_DIR$/day04/day04.iml" filepath="$PROJECT_DIR$/day04/day04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day041.iml" filepath="$PROJECT_DIR$/day041.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/day041.main.iml" filepath="$PROJECT_DIR$/.idea/modules/day041.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/day041.test.iml" filepath="$PROJECT_DIR$/.idea/modules/day041.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/hanajava.iml" filepath="$PROJECT_DIR$/hanajava.iml" />
       <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/test.main.iml" />
