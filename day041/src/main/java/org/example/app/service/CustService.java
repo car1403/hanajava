@@ -13,6 +13,7 @@ public class CustService implements Service<String, CustDto> {
     Dao<String, CustDto> dao;
 
     public CustService(){
+
         dao = new CustDao();
     }
 
