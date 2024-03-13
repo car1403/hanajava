@@ -8,14 +8,20 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
         </processorPath>
-        <module name="day041.main" />
-        <module name="day041.test" />
+        <module name="day051.test" />
+        <module name="day051.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day041" target="17" />
       <module name="day041.main" target="17" />
       <module name="day041.test" target="17" />
+      <module name="day05" target="17" />
+      <module name="day05.main" target="17" />
+      <module name="day05.test" target="17" />
+      <module name="day051" target="17" />
+      <module name="day051.main" target="17" />
+      <module name="day051.test" target="17" />
       <module name="test" target="17" />
       <module name="test.main" target="17" />
       <module name="test.test" target="17" />
