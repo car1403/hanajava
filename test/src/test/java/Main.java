@@ -1,9 +1,6 @@
-package org.example;
-
-import lombok.extern.slf4j.Slf4j;
+import org.example.ConnectionPool;
 
 import java.sql.SQLException;
-import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) {

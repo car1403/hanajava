@@ -1,2 +1,4 @@
 rootProject.name = 'test'
+include 'src:main:mysql'
+findProject(':src:main:mysql')?.name = 'mysql'
 

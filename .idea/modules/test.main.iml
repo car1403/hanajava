@@ -3,13 +3,17 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../test/out/production/classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../test/src/main">
+    <content url="file://$MODULE_DIR$/../../test/src/main/java">
       <sourceFolder url="file://$MODULE_DIR$/../../test/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../test/src/main/java/generated" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../test/src/main/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../test/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../../test/src/main/generated" isTestSource="false" generated="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.24" level="project" />
+    <orderEntry type="library" name="Gradle: com.mysql:mysql-connector-j:8.0.31" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.19.4" level="project" />
   </component>
 </module>

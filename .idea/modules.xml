@@ -20,6 +20,11 @@
       <module fileurl="file://$PROJECT_DIR$/hanajava.iml" filepath="$PROJECT_DIR$/hanajava.iml" />
       <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/test.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/test.src.iml" filepath="$PROJECT_DIR$/.idea/modules/src/test.src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/main/test.src.main.iml" filepath="$PROJECT_DIR$/.idea/modules/src/main/test.src.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/main/mysql/test.src.main.mysql.iml" filepath="$PROJECT_DIR$/.idea/modules/src/main/mysql/test.src.main.mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/main/mysql/test.src.main.mysql.main.iml" filepath="$PROJECT_DIR$/.idea/modules/src/main/mysql/test.src.main.mysql.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/src/main/mysql/test.src.main.mysql.test.iml" filepath="$PROJECT_DIR$/.idea/modules/src/main/mysql/test.src.main.mysql.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/test.test.iml" filepath="$PROJECT_DIR$/.idea/modules/test.test.iml" />
     </modules>
   </component>
