@@ -1,6 +1,7 @@
 package com.hana.service;
 
 import com.hana.data.CustDto;
+import com.hana.exception.DuplicatedIdException;
 import com.hana.frame.Dao;
 import com.hana.frame.Service;
 import com.hana.repository.CustDao;
@@ -18,33 +19,42 @@ public class CustService implements Service<String, CustDto> {
 
 
     @Override
-    public int add(CustDto custDto) {
-        // Insert ...
-        dao.insert(custDto);
+    public int add(CustDto custDto) throws DuplicatedIdException {
+        System.out.println("Start TR....");
+        try {
+            dao.insert(custDto);
+            System.out.println("COMMIT....");
+        }catch(DuplicatedIdException e){
+            System.out.println("ROLLBACK....");
+            throw e;
+        }finally {
+            System.out.println("End TR....");
+        }
+
         // SMS ..
         System.out.println("Send SMS ....");
         return 0;
     }
 
     @Override
-    public int del(String s) {
+    public int del(String s) throws Exception {
         dao.delete(s);
         return 0;
     }
 
     @Override
-    public int modify(CustDto custDto) {
+    public int modify(CustDto custDto) throws Exception {
         dao.update(custDto);
         return 0;
     }
 
     @Override
-    public CustDto get(String s) {
+    public CustDto get(String s) throws Exception {
         return dao.select(s);
     }
 
     @Override
-    public List<CustDto> get() {
+    public List<CustDto> get() throws Exception {
         return dao.select();
     }
 
