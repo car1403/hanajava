@@ -1,11 +1,13 @@
 package com.hana.frame;
 
+import com.hana.exception.DuplicatedIdException;
+
 import java.util.List;
 
 public interface Service<K, V> {
-    int add(V v);
-    int del(K k);
-    int modify(V v);
-    V get(K k);
-    List<V> get();
+    int add(V v) throws DuplicatedIdException;
+    int del(K k) throws Exception;
+    int modify(V v) throws Exception;
+    V get(K k) throws Exception;
+    List<V> get() throws Exception;
 }
