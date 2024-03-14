@@ -1,11 +1,8 @@
 package com.hana.jdbc;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
-public class Jdbc1 {
+public class Jdbc2 {
     public static void main(String[] args) {
         // 1. Driver Loading
         try {
@@ -28,20 +25,33 @@ public class Jdbc1 {
             e.printStackTrace();
         }
         // 3. SQL 구문 생성
-        String insertSql = "INSERT INTO db_cust VALUES(?,?,?)";
+        String selectSql = "SELECT * FROM db_cust";
         PreparedStatement pstmt = null;
+        ResultSet rset = null;
         try {
-            pstmt = con.prepareStatement(insertSql);
-            pstmt.setString(1,"id03");
-            pstmt.setString(2,"pwd03");
-            pstmt.setString(3,"한글");
+            pstmt = con.prepareStatement(selectSql);
             //4. 전송
-            pstmt.executeUpdate();
+            rset = pstmt.executeQuery();
+            // 5. 결과 출력
+            while(rset.next()){
+                String custId = rset.getString("id");
+                String custPwd = rset.getString("pwd");
+                String custName = rset.getString("name");
+                System.out.printf("%s %s %s %n",custId, custPwd, custName);
+            }
+
             System.out.println("Inserted Data .....");
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("SQL Error");
         }finally {
+            if(rset != null){
+                try {
+                    rset.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if(pstmt != null){
                 try {
                     pstmt.close();
