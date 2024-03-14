@@ -8,8 +8,8 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
         </processorPath>
-        <module name="day06.main" />
-        <module name="day06.test" />
+        <module name="day061.test" />
+        <module name="day061.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +25,9 @@
       <module name="day06" target="17" />
       <module name="day06.main" target="17" />
       <module name="day06.test" target="17" />
+      <module name="day061" target="17" />
+      <module name="day061.main" target="17" />
+      <module name="day061.test" target="17" />
       <module name="test" target="17" />
       <module name="test.main" target="17" />
       <module name="test.src.main.mysql" target="17" />
