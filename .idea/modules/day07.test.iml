@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="day07:test" external.linked.project.path="$MODULE_DIR$/../../day07" external.root.project.path="$MODULE_DIR$/../../day07" external.system.id="GRADLE" external.system.module.group="com.hana" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../day07/build/classes/java/test" />
+    <output-test url="file://$MODULE_DIR$/../../day07/out/test/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../day07/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../day07/src/test/java" isTestSource="true" />
