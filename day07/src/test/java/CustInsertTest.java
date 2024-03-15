@@ -6,11 +6,11 @@ public class CustInsertTest {
 
     public static void main(String[] args) {
         CustService service = new CustService();
-        CustDto obj = CustDto.builder().id("id99").pwd("pwd99").name("james").build();
+        CustDto obj = CustDto.builder().id("id97").pwd("pwd97").name("james").build();
         try {
             service.add(obj);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         System.out.println("Hello world!");
     }

@@ -4,6 +4,7 @@
     <output-test url="file://$MODULE_DIR$/../../day07/out/test/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../day07/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../day07/src/test/generated_tests" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../day07/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../day07/src/test/resources" type="java-test-resource" />
     </content>

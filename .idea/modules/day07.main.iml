@@ -4,6 +4,7 @@
     <output url="file://$MODULE_DIR$/../../day07/out/production/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../day07/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../day07/src/main/generated" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../day07/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../day07/src/main/resources" type="java-resource" />
     </content>

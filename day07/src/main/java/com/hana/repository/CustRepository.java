@@ -15,21 +15,10 @@ import java.util.List;
 
 public class CustRepository implements Repository<String, CustDto> {
 
-    ConnectionPool cp;
-
-    public CustRepository(){
-        try {
-            cp = ConnectionPool.create();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     @Override
-    public CustDto insert(CustDto custDto)  throws DuplicatedIdException, Exception{
-        // 2. Connection
-        Connection con = null;
-        con = cp.getConnection();
+    public CustDto insert(CustDto custDto, Connection con) throws DuplicatedIdException, Exception {
+
         // 4. PreparedStatement
         PreparedStatement pstmt = null;
         try{
@@ -52,34 +41,31 @@ public class CustRepository implements Repository<String, CustDto> {
                     throw new RuntimeException(e);
                 }
             }
-            cp.releaseConnection(con);
+
         }
 
         return custDto;
+
+
     }
 
     @Override
-    public CustDto update(CustDto custDto) throws NotFoundIdException, Exception {
-        // 1. Driver Loading
-        // 2. Connection
-        // 3. SQL
-        // 4. PreparedStatement
-        // 5. Close
+    public CustDto update(CustDto custDto, Connection con) throws NotFoundIdException, Exception {
         return null;
     }
 
     @Override
-    public Boolean delete(String s) throws NotFoundIdException, Exception {
+    public Boolean delete(String s, Connection con) throws NotFoundIdException, Exception {
         return null;
     }
 
     @Override
-    public List<CustDto> select() throws Exception {
+    public List<CustDto> select(Connection con) throws Exception {
         return null;
     }
 
     @Override
-    public CustDto select(String s) throws NotFoundIdException, Exception {
+    public CustDto select(String s, Connection con) throws NotFoundIdException, Exception {
         return null;
     }
 }
