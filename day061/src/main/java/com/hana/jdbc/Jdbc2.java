@@ -40,7 +40,7 @@ public class Jdbc2 {
                 System.out.printf("%s %s %s %n",custId, custPwd, custName);
             }
 
-            System.out.println("Inserted Data .....");
+            System.out.println("데이터가 없습니다. ");
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("SQL Error");

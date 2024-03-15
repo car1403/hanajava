@@ -34,11 +34,11 @@ public class Jdbc4 {
             pstmt = con.prepareStatement(insertSql);
             pstmt.setString(1,"pwd03");
             pstmt.setString(2,"이말숙");
-            pstmt.setString(3,"id03");
+            pstmt.setString(3,"id05");
 
             //4. 전송
-            pstmt.executeUpdate();
-            System.out.println("Updated Data .....");
+            int result =  pstmt.executeUpdate();
+            System.out.println("Updated Data ....."+result);
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("SQL Error");

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="day07:main" external.linked.project.path="$MODULE_DIR$/../../day07" external.root.project.path="$MODULE_DIR$/../../day07" external.system.id="GRADLE" external.system.module.group="com.hana" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../day07/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../day07/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../day07/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../day07/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.24" level="project" />
+    <orderEntry type="library" name="Gradle: com.mysql:mysql-connector-j:8.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.25.1" level="project" />
+  </component>
+</module>

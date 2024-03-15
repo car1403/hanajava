@@ -30,7 +30,7 @@ public class Jdbc3 {
         ResultSet rset = null;
         try {
             pstmt = con.prepareStatement(selectSql);
-            pstmt.setString(1,"id02");
+            pstmt.setString(1,"id05");
             //4. 전송
             rset = pstmt.executeQuery();
             rset.next();
